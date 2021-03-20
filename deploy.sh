@@ -13,5 +13,5 @@ docker push angtb/multi-worker:$SHA
 kubectl apply -f k8s
 
 kubectl set image deployments/server-deployment server=angtb/multi-server:$SHA
-kubectl set image deployments/client-deployment server=angtb/multi-client:$SHA
-kubectl set image deployments/worker-deployment server=angtb/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=angtb/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=angtb/multi-worker:$SHA
